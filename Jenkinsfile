@@ -8,7 +8,7 @@ pipeline
             agent any
             steps
             {
-            checkout scmGit(branches: [[name: 'origin/master']],
+            checkout scmGit(branches: [[name: 'origin/dev']],
             userRemoteConfigs: [[ url: 'https://github.com/uriyapraba/pipeline-agent-dockerfile.git' ]])
             }
         }
